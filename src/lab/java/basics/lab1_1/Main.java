@@ -17,8 +17,9 @@ public class Main {
 
         //1.3
 
-        int x = 10500;
-        double result1 = (x / 10) / 10;
+        double x = 10500.0;
+        double y1 = 10.0;
+        double result1 = (x / y1) / y1;
         System.out.println(result1);
 
         //1.4
@@ -58,18 +59,17 @@ public class Main {
 
     //1.2 Methods
     public static void resultFirst (){
-        double x = 46;
-        double y = 10;
-        double z = 3;
-        double result = (x + y) * (y / 3);
+        double x = 46.0;
+        double y = 10.0;
+        double z = 3.0;
+        double result = (x + y) * (y / z);
         System.out.println(result);
     }
 
     public static void resultSecond (){
-        double c = 29;
-        double v = 4;
-        double b = -15;
-
+        double c = 29.0;
+        double v = 4.0;
+        double b = -15.0;
         double result = c * v * b;
         System.out.println(result);
 

@@ -26,12 +26,16 @@ public class Calculator {
     }
 
     public static void Divider(long x, long y) {
-        long z = x / y;
+        double dx = x;
+        double dy = y;
+        double z = dx / dy;
         System.out.println(z);
     }
 
     public static void Divider(int x, int y) {
-        int z = x / y;
+        double dx = x;
+        double dy = y;
+        double z = dx / dy;
         System.out.println(z);
     }
 

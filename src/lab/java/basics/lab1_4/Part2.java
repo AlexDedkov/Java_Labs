@@ -33,7 +33,6 @@ public class Part2 {
             if (isUnique) {
                 System.out.println("Первое уникальное число : " + arr[i]);
                 break;
-            } else {
             }
         }
     }

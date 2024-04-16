@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {3, -3, 7, 4, 5, 4, 3};
-        boolean result;
+        int[] arr = {1, -3, 7, 4, 1, 4, 5};
 
 // 1.1       counterTo();
 
@@ -23,8 +22,10 @@ public class Main {
 //
 
 //
-//   1.5     result = arrayCheckFirst(arr);
-//        System.out.println("Результат: " + result);
+        boolean result1 = arrayCheckFirst(arr);
+        System.out.println("Результат: " + result1);
+        boolean result2 = arrayCheckFull(arr);
+        System.out.println("Результат: " + result2);
 
 //   1.6     System.out.println(Arrays.toString(arr));
 //        result = arrayCheckFull(arr);
@@ -108,28 +109,20 @@ public class Main {
 
     //1.5
     public static boolean arrayCheckFirst(int[] arr) {
-        boolean result = false;
-        Integer firstNum = arr[0];
-        Integer lastNum = arr[arr.length - 1];
-        if (firstNum == 3 || lastNum == 3) {
-            result = true;
+        if (arr.length >= 2) {
+            return (arr[0] == 3 || arr[arr.length - 1] == 3);
         } else {
-            result = false;
+            return false;
         }
-        return result;
     }
 
     //1.6
     public static boolean arrayCheckFull(int[] arr) {
-        boolean result = false;
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (i == 3 || i == 5) {
-                result = true;
-            } else {
-                result = false;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1 || arr[i] == 3) {
+                return true;
             }
         }
-        return result;
+        return false;
     }
-
 }

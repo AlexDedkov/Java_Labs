@@ -1,4 +1,4 @@
-package lab.java.basics.lab_1_6;
+package lab.java.basics.lab_1_6.ex4;
 
 public abstract class Main {
     public static void main(String[] args) {

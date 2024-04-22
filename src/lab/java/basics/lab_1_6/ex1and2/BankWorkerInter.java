@@ -1,4 +1,4 @@
-package lab.java.basics.lab_1_6;
+package lab.java.basics.lab_1_6.ex1and2;
 
 //1.2
 

@@ -1,6 +1,6 @@
-package lab.java.basics.lab_1_6;
+package lab.java.basics.lab_1_6.ex1and2;
 
-public class BankWorker extends Human implements BankWorkerInter {
+public class Client extends Human {
     public String bankName;
 
     @Override
@@ -11,18 +11,10 @@ public class BankWorker extends Human implements BankWorkerInter {
         System.out.println("Bank Name: " + bankName);
     }
 
-    public BankWorker(String name, String surname, String bankName) {
+    public Client(String name, String surname, String bankName) {
         this.name = name;
         this.surname = surname;
         this.bankName = bankName;
-
-        greet();
-    }
-
-    @Override
-    public void performDuties() {
-        System.out.println("Performing bank worker duties...");
-
     }
 
 }

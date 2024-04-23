@@ -13,7 +13,7 @@ public class Main {
 
         //1.3
         String bad = "Здесь только хорошие слова но есть бяка а еще есть еще одна бяка";
-        String fixed = fixBadWords(bad);
+        String fixed = fixBadWords(bad, "бяка");
         System.out.println(fixed);
 
         //1.4
@@ -60,15 +60,13 @@ public class Main {
         return count;
     }
 
-    private static String fixBadWords(String bad) {
-        String regex = "бяка";
-
-        String fixed = bad.replaceAll(regex, "[вырезано цензурой]");
-
+    private static String fixBadWords(String text, String badWord) {
+        String fixed = text.replaceAll(badWord, "[вырезано цензурой]");
         return fixed;
     }
 
     private static boolean palindromeCheck(String pal) {
+        pal = pal.toLowerCase();
         int length = pal.length();
         for (int i = 0; i < (pal.length() / 2); i++) {
             if (pal.charAt(i) != pal.charAt(length - i - 1)) {

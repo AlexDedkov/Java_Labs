@@ -1,4 +1,4 @@
-package lab.java.basics.lab_10;
+package lab.java.basics.lab_1_10;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class TextFileWriter {
     }
 
     public static void main(String[] args) {
-        String filePath = "src/lab/java/basics/lab_10/Text2.txt";
+        String filePath = "src/lab/java/basics/lab_1_10/Text2.txt";
         String content = "Это строка, которую нужно записать в файл.";
         writeToFile(filePath, content);
         System.out.println("Строка записана в файл.");

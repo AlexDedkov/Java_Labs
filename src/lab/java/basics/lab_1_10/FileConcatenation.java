@@ -1,9 +1,8 @@
-package lab.java.basics.lab_10;
+package lab.java.basics.lab_1_10;
 
-import java.io.*;
 import java.util.List;
 
-import static lab.java.basics.lab_10.TextFileReader.readFile;
+import static lab.java.basics.lab_1_10.TextFileReader.readFile;
 
 public class FileConcatenation {
     public static void concatenateFiles(String filePath1, String filePath2, String outputPath) {
@@ -24,14 +23,14 @@ public class FileConcatenation {
     }
 
     public static void main(String[] args) {
-        String filePath1 = "src/lab/java/basics/lab_10/Text.txt";
-        String filePath2 = "src/lab/java/basics/lab_10/Text2.txt";
-        String outputPath = "src/lab/java/basics/lab_10/TextFinal.txt";
+        String filePath1 = "src/lab/java/basics/lab_1_10/Text.txt";
+        String filePath2 = "src/lab/java/basics/lab_1_10/Text2.txt";
+        String outputPath = "src/lab/java/basics/lab_1_10/TextFinal.txt";
         concatenateFiles(filePath1, filePath2, outputPath);
     }
 
     public static void printInfo(){
-        String filePath = "src/lab/java/basics/lab_10/TextFinal.txt";
+        String filePath = "src/lab/java/basics/lab_1_10/TextFinal.txt";
         List<String> fileContent = readFile(filePath);
         for (String line : fileContent) {
             System.out.println(line);

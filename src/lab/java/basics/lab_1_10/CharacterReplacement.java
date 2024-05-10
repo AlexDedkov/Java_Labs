@@ -1,4 +1,4 @@
-package lab.java.basics.lab_10;
+package lab.java.basics.lab_1_10;
 
 import java.io.*;
 
@@ -31,7 +31,7 @@ public class CharacterReplacement {
     }
 
     public static void main(String[] args) {
-        String filePath = "src/lab/java/basics/lab_10/TextReplace.txt";
+        String filePath = "src/lab/java/basics/lab_1_10/TextReplace.txt";
         replaceNonAlphanumeric(filePath);
     }
 }

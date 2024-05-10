@@ -1,4 +1,4 @@
-package lab.java.basics.lab_10;
+package lab.java.basics.lab_1_10;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -30,7 +30,7 @@ public class TextFileReader {
     }
 
     public static void main(String[] args) {
-        String filePath = "src/lab/java/basics/lab_10/Text.txt";
+        String filePath = "src/lab/java/basics/lab_1_10/Text.txt";
         List<String> fileContent = readFile(filePath);
         for (String line : fileContent) {
             System.out.println(line);

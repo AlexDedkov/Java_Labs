@@ -27,6 +27,8 @@ public class CharacterReplacement {
             System.out.println("Замена завершена.");
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("Программа завершила работу.");
         }
     }
 
